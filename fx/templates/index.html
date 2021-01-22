@@ -1,0 +1,23 @@
+<title>FX予測</title>
+<style>
+  #wrapper {
+    text-align: center;
+  }
+</style>
+
+  <div id="wrapper">
+    {% for message in form.date.errors %}
+      <div>{{ message }}</div>
+    {% endfor %}
+
+
+    <form method="post">
+      {{ form.date.label }}<br>
+      {{ form.date }}
+      <br>
+      {{ form.money.label }}<br>
+      {{ form.money }}
+      <br>
+      {{ form.submit }}
+    </form>
+  </div>

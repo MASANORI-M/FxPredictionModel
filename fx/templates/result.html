@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<title>明日の米ドル円終値予測</title>
+{% if pred %}
+  <h1>明日のドル円は、 ￥{{ pred[0][0] }}円</h1>
+  <a href="./">TOPへ戻る</a>
+{% else %}
+  <a href="./">TOPへ戻る</a>
+{% endif %}
